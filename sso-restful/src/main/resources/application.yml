@@ -1,0 +1,18 @@
+# 错误页，指定发生错误时，跳转的URL。
+server: 
+  port: 8080
+#配置数据源
+spring:
+  application:
+    name: sso-restful
+  profiles:
+    active: ${mycloud_profile}
+  datasource:
+     url: ${spring_datasource_url}
+     username: ${spring_datasource_username}
+     password: ${spring_datasource_password}
+     driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    static-path-pattern: /**
+    favicon:
+      enabled: false

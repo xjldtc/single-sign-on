@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: ${mycloud_profile}
+
+logging:
+  file: E:\log\fc-assembly.log
