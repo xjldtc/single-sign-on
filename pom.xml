@@ -44,14 +44,6 @@
 			</roles>
 		</developer>
 		
-		<developer>
-			<id>programmer</id>
-			<name>manman zhang</name>
-			<email></email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-		</developer>
 	</developers>
 
 	<properties>
@@ -74,28 +66,28 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.xjldtc.framework.familycloud</groupId>
-				<artifactId>project-biz</artifactId>
+				<groupId>com.newland.framework.singlesignon</groupId>
+				<artifactId>sso-biz</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.xjldtc.framework.familycloud</groupId>
-				<artifactId>project-common</artifactId>
+				<groupId>com.newland.framework.singlesignon</groupId>
+				<artifactId>sso-common</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.xjldtc.framework.familycloud</groupId>
-				<artifactId>project-webservice</artifactId>
+				<groupId>com.newland.framework.singlesignon</groupId>
+				<artifactId>sso-webservice</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.xjldtc.framework.familycloud</groupId>
-				<artifactId>project-portal</artifactId>
+				<groupId>com.newland.framework.singlesignon</groupId>
+				<artifactId>sso-portal</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.xjldtc.framework.familycloud</groupId>
-				<artifactId>project-assembly</artifactId>
+				<groupId>com.newland.framework.singlesignon</groupId>
+				<artifactId>sso-assembly</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
@@ -144,6 +136,12 @@
 	            <groupId>org.springframework.boot</groupId>
 	            <artifactId>spring-boot-starter-security</artifactId>
 	            <version>${spring-boot.version}</version>
+	        </dependency>
+        
+	        <dependency>
+	            <groupId>org.springframework.security</groupId>
+	            <artifactId>spring-security-jwt</artifactId>
+	            <version>1.0.9.RELEASE</version>
 	        </dependency>
 	        
 	        <dependency>
